@@ -1,0 +1,33 @@
+/* 반응형 디자인 */
+
+/* ------------------------------------------------------------------------------ 태블릿화면 */
+@media (max-width:1250px) {
+    #top_ad {
+        padding:12px 160px;
+    }
+
+    header, footer {background-color:palegreen; padding:0 160px;}
+}
+
+/* ------------------------------------------------------------------------------ 모바일화면 */
+@media (max-width:475px) {
+    #top_ad {
+        padding:12px 20px;
+    }
+
+    header, footer {background-color:goldenrod; padding:0 20px;}
+
+    #header-wrap .top {
+        display:none;
+    }
+    #header-wrap .bottom {display:flex; align-items:center;}
+    #header-wrap .bottom h1 {display:block;}
+    #header-wrap .bottom h1 > a {width:45px; height:30px;}
+    #header-wrap .bottom h1 > a img {width:45px; height:30px;}
+
+    #header-wrap .bottom nav .left {margin-right:0;}
+
+    #header-wrap .bottom nav #main-category {display:none;}
+
+    #header-wrap .bottom #user_menu {display:flex; gap:17px}
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윙잇</title>
+
+    <!-- swiper연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- css연결 -->
+    <link rel="stylesheet" href="./styles/reset.css"><!-- 디자인 초기화 -->
+    <link rel="stylesheet" href="./styles/common.css"><!-- 헤더, 푸터 -->
+    <link rel="stylesheet" href="./styles/index.css"><!-- 메인화면 -->
+    <link rel="stylesheet" href="./styles/responsive.css"><!-- 반응형 -->
+    <!-- js연결 -->
+    <script src="./sctipts/Swiper.js" defer></script>
+    <script src="./sctipts/DB.js" defer></script>
+    <script src="./sctipts/common.js" defer></script>
+</head>
+<body>
+    <div id="wrap"><!-- 헤더, 메인, 푸터 전체를 묶은 div -->
+        <!-- 일회성 배너 -->
+        <div id="top_ad">
+            <p>지금 가입하면 <em>최대 3만원 할인</em></p>
+            <button type="button" class="delet"><img src="./images/icon_delet.png" alt="광고 숨기기"></button>
+        </div>
+
+        <header>
+            <div id="header-wrap"><!-- 전체 한번 묶음 -->
+                <div class="top">
+                    <h1><a href="#"><img src="./images/header/logo.png" alt="윙잇"></a></h1>
+                    <div class="user_info">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">고객센터</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <!-- 모바일화면 로고 -->
+                    <h1><a href="#"><img src="./images/header/logo.png" alt="윙잇"></a></h1>
+
+                    <nav>
+                        <div class="left">
+                            <div class="gnb_hamburger">
+                                <img src="./images/header/icon_hamburger.png" alt="카테고리 더보기">
+                            </div>
+                            <ul class="lnb">
+                                <li>
+                                    <a href="#">
+                                        <span>구이·찜·볶음</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">소·돼지·양</a></li>
+                                        <li><a href="">닭·오리·부속물</a></li>
+                                        <li><a href="">수산·해산·건어물</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>국·밥·면</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">국·탕·찌개·전골</a></li>
+                                        <li><a href="">죽·카레·스프</a></li>
+                                        <li><a href="">국수·파스타·우동</a></li>
+                                        <li><a href="">도시락·주먹밥</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>식단관리</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">닭가슴살</a></li>
+                                        <li><a href="">김밥·도시락·주먹밥</a></li>
+                                        <li><a href="">식사대용·간식·음료</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>튀김·전</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">돈가스·치킨·탕수육·</a></li>
+                                        <li><a href="">전·부침개·도우</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>분식·간식</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">피자·핫도그·만두</a></li>
+                                        <li><a href="">떡볶이·튀김·순대</a></li>
+                                        <li><a href="">스낵·핑거푸드</a></li>
+                                        <li><a href="">생수·음료·커피</a></li>
+                                        <li><a href="">어묵·소세지</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>베이커리·떡</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">떡류·한과</a></li>
+                                        <li><a href="">베이글·샌드·버거</a></li>
+                                        <li><a href="">빵·케이크·디저트</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>반찬·소스</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">드레싱·소스·양념류</a></li>
+                                        <li><a href="">반찬·젓갈·절임</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>시간</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">아침</a></li>
+                                        <li><a href="">점심</a></li>
+                                        <li><a href="">저녁</a></li>
+                                        <li><a href="">야식</a></li>
+                                        <li><a href="">간식</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>인원수</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">1인분</a></li>
+                                        <li><a href="">2인분</a></li>
+                                        <li><a href="">3인분 이상</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>연령대</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">영유아</a></li>
+                                        <li><a href="">어린이</a></li>
+                                        <li><a href="">학생</a></li>
+                                        <li><a href="">직장인</a></li>
+                                        <li><a href="">주부</a></li>
+                                        <li><a href="">시니어</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>조리방법</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">즉시섭취</a></li>
+                                        <li><a href="">즉석해동</a></li>
+                                        <li><a href="">에어프라이어</a></li>
+                                        <li><a href="">전자레인지</a></li>
+                                        <li><a href="">프라이팬</a></li>
+                                        <li><a href="">냄비</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>상품유형</span>
+                                        <img src="#" alt="">
+                                    </a>
+                                    <ul class="inb_menu">
+                                        <li><a href="">신선식품</a></li>
+                                        <li><a href="">밀키트</a></li>
+                                        <li><a href="">가공식품</a></li>
+                                    </ul>
+                                </li>
+    
+                                <!-- ----------------모바일화면에서 나옴/처음은 안보이게 -->
+                                <li>
+                                    <a href="#">
+                                        <span>신제품</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>베스트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>특가/혜택</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>이벤트</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul id="main-category">
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">특가/혜택</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul><!-- 웹에선 등장, 모바일화면에선 사라짐 -->
+                    </nav>
+                    <ul id="user_menu">
+                        <li>
+                            <input type="text" name="search" id="search" placeholder="검색어를 입력해주세요">
+                            <a href="#"><img src="./images/header/icon_search.png" alt="검색어 찾기"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/header/icon_myinfo.png" alt="내정보 확인하기"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/header/icon_cart.png" alt="장바구니 확인하기"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="main_wrap">
+                <h1>시작</h1>
+            </div>
+        </main>
+
+        <footer>
+            <div id="footer_wrap">
+                <!-- 회사소개 + sns -->
+                <div class="top">
+                    <ul>
+                        <li><a href="#">윙잇소개</a></li>
+                        <li><a href="#">배송안내</a></li>
+                        <li><a href="#">윙잇Biz</a></li>
+                        <li><a href="#">입점 & 제휴신청</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="sns">
+                        <a href="#"><img src="#" alt="페이스북"></a>
+                        <a href="#"><img src="#" alt="인스타그램"></a>
+                        <a href="#"><img src="#" alt="카카오톡"></a>
+                    </div>
+                </div>
+                <!-- 회사정보 + 앱 설치 -->
+                <div class="bottom">
+                    <div class="company_info">
+                        <h5>주식회사 윙잇</h5>
+                        <address>
+                            대표이사 : 임승진<br>사업자등록번호 : 542-86-00304 사업자정보확인 | 통신판매업신고 : 2018-서울강남-03300<br>주소 : 서울 구로구 디지털로 306 대륭포스트타워2차, 712호<br>전화번호 : 1599-3108 | 팩스 : 02-6937-0265<br>제휴문의 : md@wingeat.com<br>호스팅 사용자 : 아마존 웹 서비스(AWS)
+                        </address>
+                    </div>
+                    <div class="center">
+                        <a class="call">
+                            <p>고객센터</p>
+                            <img src="#" alt="고객센터 더보기">
+                        </a>
+                        <p>운영시간 | 오전9시 ~ 오후6(주말/공휴일 휴무)<br>점심시간 | 오후12시 ~ 오후1시</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

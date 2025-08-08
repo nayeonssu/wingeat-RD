@@ -1,0 +1,92 @@
+/* 헤더, 푸터 디자인 */
+
+header, footer {background-color:aquamarine; padding:0 360px;}
+
+/* -------------------------------------------------------------------------- 일회성 배너 */
+#top_ad {
+    background-color:#272727;
+    display:flex; justify-content:space-between;
+    align-items:center;
+    padding:12px 360px;
+}
+#top_ad p {color:#fff; font-size:1.063rem; font-weight:600;}
+#top_ad p em {color:#FF726A; font-size:1.063rem; font-weight:600;}
+#top_ad button {
+    width:24px; height:24px;
+}
+#top_ad button img {}
+
+/* -------------------------------------------------------------------------- 헤더 s */
+
+#header-wrap {}
+
+#header-wrap .top {
+    display:flex; justify-content:space-between;
+    padding:14px 0;
+    background-color:pink;
+}
+/* 로고 */
+#header-wrap .top h1 {}
+#header-wrap .top h1 > a {}
+#header-wrap .top h1 > a img {}
+/* 로그인 + 회원가입 + 고객센터 */
+#header-wrap .top .user_info {display:flex; align-items:center; gap:14px;;}
+#header-wrap .top .user_info a {font-size:0.813rem;}
+#header-wrap .top .user_info a::after {
+    content:'|';
+    color:#BDBDBD;
+    margin-left:14px;
+}
+#header-wrap .top .user_info a:last-child:after {
+    content:none;
+}
+
+#header-wrap .bottom {
+    display:flex; justify-content:space-between;
+    padding:10px 0;
+    background-color:yellow;
+}
+/* 모바일화면 로고 */
+#header-wrap .bottom h1 {display:none;}
+#header-wrap .bottom h1 > a {}
+#header-wrap .bottom h1 > a img {}
+/* 햄버거 카테고리 */
+#header-wrap .bottom nav {display:flex; align-items:center;}
+#header-wrap .bottom nav .left {margin-right:40px;}
+#header-wrap .bottom nav .left .gnb_hamburger {width:26px; height:26px;}
+#header-wrap .bottom nav .left .gnb_hamburger img {}
+
+#header-wrap .bottom nav .left .lnb {display:none;}
+#header-wrap .bottom nav .left .lnb li {}
+#header-wrap .bottom nav .left .lnb li a {}
+#header-wrap .bottom nav .left .lnb li a span {}
+#header-wrap .bottom nav .left .lnb li a img {}
+#header-wrap .bottom nav .left .lnb li .inb_menu {display:none;}
+#header-wrap .bottom nav .left .lnb li .inb_menu li {}
+#header-wrap .bottom nav .left .lnb li .inb_menu li a {}
+/* 메인 카테고리 */
+#header-wrap .bottom nav #main-category {display:flex; gap:40px}
+#header-wrap .bottom nav #main-category li {}
+#header-wrap .bottom nav #main-category li a {font-weight:600; font-size:1.068rem;}
+/* 검색 + 내정보 + 장바구니 */
+#header-wrap .bottom #user_menu {display:flex; gap:24px}
+#header-wrap .bottom #user_menu li {display:flex; align-items:center;}
+#header-wrap .bottom #user_menu li:nth-child(1) {
+    position:relative;
+    width:235px;
+}
+#header-wrap .bottom #user_menu li #search {
+    position:relative;
+    padding:13px 40px 13px 18px;
+    width:235px;
+    border-radius:50px;
+    background-color:#eee;
+    font-size:0.875rem;
+}
+#header-wrap .bottom #user_menu li a {}
+#header-wrap .bottom #user_menu li a img {}
+#header-wrap .bottom #user_menu li:nth-child(1) a {width:26px; height:26px; z-index:999; position:absolute; right:8px;}
+#header-wrap .bottom #user_menu li:nth-child(2) a {width:32px; height:32px;}
+#header-wrap .bottom #user_menu li:nth-child(3) a {width:32px; height:32px;}
+
+/* -------------------------------------------------------------------------- 헤더 e */
