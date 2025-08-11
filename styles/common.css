@@ -90,3 +90,54 @@ header, footer {background-color:aquamarine; padding:0 360px;}
 #header-wrap .bottom #user_menu li:nth-child(3) a {width:32px; height:32px;}
 
 /* -------------------------------------------------------------------------- 헤더 e */
+
+/* -------------------------------------------------------------------------- 푸터 s */
+
+#footer_wrap {}
+/* -------------------------------------위 */
+#footer_wrap .top {
+    padding:16px 0;
+    display:flex; justify-content:space-between;
+    align-items:center;
+    background-color:tomato;
+}
+/* 회사 카테고리 */
+#footer_wrap .top ul {display:flex; gap:30px;}
+#footer_wrap .top ul li {}
+#footer_wrap .top ul li > a {}
+/* sns */
+#footer_wrap .top .sns {}
+#footer_wrap .top .sns a {margin-left:17px;}
+
+/* -------------------------------------아래 */
+#footer_wrap .bottom {
+    display:flex; justify-content:space-between;
+    padding:40px 0;
+}
+#footer_wrap .bottom .company_info {}
+#footer_wrap .bottom .company_info h5 {}
+#footer_wrap .bottom .company_info address {
+    margin:25px 0;
+}
+
+#footer_wrap .bottom .company_info .center {display:flex; }
+#footer_wrap .bottom .company_info .center .call {}
+#footer_wrap .bottom .company_info .center .call .text {}
+#footer_wrap .bottom .company_info .center .call .text p {}
+#footer_wrap .bottom .company_info .center .call .text img {}
+#footer_wrap .bottom .company_info .center .call > .p {}
+#footer_wrap .bottom .company_info .center .call > p {}
+
+#footer_wrap .bottom .right {
+    display:flex; align-items:center; gap:45px;
+}
+/* QR코드 */
+#footer_wrap .bottom .right #qr-code {}
+#footer_wrap .bottom .right #qr-code .img {}
+#footer_wrap .bottom .right #qr-code p {}
+/* 앱 다운로드 */
+#footer_wrap .bottom .right #app-download {display:flex; flex-flow:column; gap:20px;}
+#footer_wrap .bottom .right #app-download a {width:163px; height:55px;}
+#footer_wrap .bottom .right #app-download a img {width:100%;}
+
+/* -------------------------------------------------------------------------- 푸터 e */
