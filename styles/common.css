@@ -120,13 +120,20 @@ header, footer {background-color:aquamarine; padding:0 360px;}
     margin:25px 0;
 }
 
-#footer_wrap .bottom .company_info .center {display:flex; }
+#footer_wrap .bottom .company_info .center {display:flex;}
 #footer_wrap .bottom .company_info .center .call {}
-#footer_wrap .bottom .company_info .center .call .text {}
-#footer_wrap .bottom .company_info .center .call .text p {}
+#footer_wrap .bottom .company_info .center .call .text {
+    margin-bottom:5px;
+    display:flex;
+}
+#footer_wrap .bottom .company_info .center .call .text p {
+    font-weight:500;
+}
 #footer_wrap .bottom .company_info .center .call .text img {}
-#footer_wrap .bottom .company_info .center .call > .p {}
-#footer_wrap .bottom .company_info .center .call > p {}
+#footer_wrap .bottom .company_info .center .call > p {
+    font-size:1.875rem;
+    font-weight:500;
+}
 
 #footer_wrap .bottom .right {
     display:flex; align-items:center; gap:45px;
