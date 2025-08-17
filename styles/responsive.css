@@ -6,7 +6,7 @@
         padding:12px 160px;
     }
 
-    header, footer {background-color:palegreen; padding:0 160px;}
+    header, footer {padding:0 160px;}
 }
 
 /* ------------------------------------------------------------------------------ 모바일화면 */
@@ -15,7 +15,7 @@
         padding:12px 20px;
     }
 
-    header, footer {background-color:goldenrod; padding:0 20px;}
+    header, footer {padding:0 20px;}
 
     #header-wrap .top {
         display:none;
@@ -30,4 +30,23 @@
     #header-wrap .bottom nav #main-category {display:none;}
 
     #header-wrap .bottom #user_menu {display:flex; gap:17px}
+    /* -------------------------------------------------------------------------------footer */
+    #footer_wrap .top {
+        padding:16px 0;
+        display:flex; justify-content:space-between; flex-flow:column nowrap;
+        gap:30px;
+        align-items:center;
+    }
+    #footer_wrap .bottom {
+        display:flex; justify-content:space-between; flex-flow:column nowrap;
+        padding:40px 0;
+        gap:20px;
+    }
+    #footer_wrap .bottom .company_info .center {
+        display:flex; justify-content:space-between;
+        align-items:flex-end;
+    }
+    #footer_wrap .bottom .right {
+        display:flex; align-items:center; justify-content:space-between;
+    }
 }
