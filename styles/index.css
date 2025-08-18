@@ -1,5 +1,8 @@
 /* main디자인 */
 #main-wrap {text-align:center;}
+/* =================================================================================== 공통작업 */
+section {padding:70px 360px;}
+h2 {font-size:1.75rem; font-weight:600;}
 /* ===================================================================================1행 ad s */
 #ad {position:relative;}
 #ad .ad-swiper {}
@@ -38,13 +41,13 @@
 
 /* prev 버튼 */
 #ad .swiper-button-prev {
-    background: url("../images/icon/icon_left.png") no-repeat center;
+    background: url(../images/icon/icon_left.png) no-repeat center;
     cursor: pointer;
 }
 
 /* next 버튼 */
 #ad .swiper-button-next {
-    background: url("../images/icon/icon_right.png") no-repeat center;
+    background: url(../images/icon/icon_right.png) no-repeat center;
     cursor: pointer;
 }
 
@@ -60,3 +63,154 @@
 }
 
 /* ===================================================================================1행 ad e */
+
+/* ===================================================================================2행 카테고리 s */
+#category {
+    position: relative;
+}
+#category .cate-swiper {
+    margin-top:50px;
+}
+#category .cate-swiper .swiper-wrapper {}
+#category .cate-swiper .swiper-wrapper .swiper-slide {}
+#category .cate-swiper .swiper-wrapper .swiper-slide a {
+    width:110px; height:110px;
+    display:flex; flex-flow:column; justify-content:center;
+    align-items:center;
+}
+#category .cate-swiper .swiper-wrapper .swiper-slide a:hover {
+    background: #f2f2f2;
+    border-radius:5px;
+}
+#category .cate-swiper .swiper-wrapper .swiper-slide a img {}
+#category .cate-swiper .swiper-wrapper .swiper-slide a p {margin-top:5px;}
+/* 기본 디자인 없애기 */
+#category .swiper-button-prev::after,
+#category .swiper-button-next::after {
+    display: none;
+}
+/* 페이지네이션 공통부분 */
+#category .swiper-button-prev,
+#category .swiper-button-next {
+    top:75%;                     /* 세로 가운데 */
+    width:34px; height:34px;
+    z-index: 99;
+}
+/* 페이지네이션 개별부분 */
+#category .swiper-button-prev {
+    background:url(../images/icon/icon_cate_left.png) no-repeat center / cover;
+    left:-52px;
+}
+#category .swiper-button-next {
+    background:url(../images/icon/icon_cate_right.png) no-repeat center / cover;
+    right:-52px;
+}
+/* ===================================================================================2행 카테고리 e */
+
+/* ===================================================================================3행 출시상품 s */
+#launch {}
+
+#launch .text {
+    margin-bottom:50px;
+}
+#launch .text h2 {}
+#launch .text p {
+    font-size:1.063rem;
+    color:#7B7B7B;
+    margin-top:15px;
+}
+
+#launch .container {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    gap:30px;
+}
+#launch .container li {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    gap:25px;
+    align-items:center;
+    border-radius:10px;
+    padding:20px 25px;
+    background:#f9f9f9;
+}
+#launch .container li .food_img {}
+#launch .container li .food_img img {}
+
+#launch .container li .food_info {
+    display:flex; flex-flow:column nowrap; justify-content:space-between;
+    padding:10px 0;
+    text-align:left;
+    height:270px;
+}
+/* 상품이름 */
+#launch .container li .food_info .name {}
+#launch .container li .food_info .name h3 {
+    margin-bottom:13px;
+}
+#launch .container li .food_info .name p {
+    font-size:0.813rem;
+    color:#828282;
+}
+/* 출시 기간 */
+#launch .container li .food_info .time {}
+#launch .container li .food_info .time span {
+    font-size:1.563rem;
+    font-weight:500;
+    margin-right:10px;
+}
+#launch .container li .food_info .time em {
+    font-size:1.563rem;
+    font-weight:500;
+    color:#FF726A;
+}
+/* 알림 받기 버튼 */
+#launch .container li .food_info .btn {}
+#launch .container li .food_info .btn p {
+    font-weight:500;
+    margin-bottom:12px;
+    color:#FF726A;
+}
+#launch .container li .food_info .btn .alam {
+    display:flex; align-items:center; justify-content:center;
+    padding:14px 0;
+    width:287px;
+    background:#FF726A;
+    border-radius:5px;
+}
+#launch .container li .food_info .btn .alam:hover {
+    background:#E8655E;
+}
+#launch .container li .food_info .btn .alam img {
+    width:18px; height:18px;
+}
+#launch .container li .food_info .btn .alam em {
+    color:#fff;
+}
+/* ===================================================================================3행 출시상품 e */
+
+/* ===================================================================================4행 베스트 s */
+#best {}
+#best h2 {}
+/* 전체보기 버튼 */
+#best .full-view {
+    display:flex; align-items:center; gap:5px;
+    justify-content:end;
+}
+#best .more p {}
+#best .more img {}
+#best .tap {
+    display:flex; flex-flow:row nowrap; justify-content:center;
+    gap:15px;
+}
+#best .tap .swiper-wrapper {
+    display: flex; justify-content:center;
+}
+#best .tap .swiper-wrapper .swiper-slide {
+    width: auto !important;
+}
+#best .tap .swiper-wrapper .swiper-slide button {
+    padding:13px 15px;
+    border-radius:5px;
+    border:1px solid #676767;
+    color:#676767;
+}
+/* ===================================================================================4행 베스트 e */

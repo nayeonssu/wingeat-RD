@@ -20,6 +20,7 @@
     <script src="./scripts/Swiper.js" defer></script>
     <script src="./scripts/DB.js" defer></script>
     <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
     <div id="wrap"><!-- 헤더, 메인, 푸터 전체를 묶은 div -->
@@ -191,7 +192,7 @@
                                     </ul>
                                 </li>
     
-                                <!-- ----------------모바일화면에서 나옴/처음은 안보이게 -->
+                                <!-- ===========================================모바일화면에서 나옴/처음은 안보이게 -->
                                 <li>
                                     <a href="#">
                                         <span>신제품</span>
@@ -259,90 +260,205 @@
                     </div>
                 </div>
                 <!-- ======================================================================2행 카테고리 -->
-                <div id="category">
-                    <div class="swiper">
-                        <!--필수-->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_newfood.png" alt="신규해택">
-                                    <p>신규혜택</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_bestfood.png" alt="베스트템">
-                                    <p>베스트템</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_free shipping.png" alt="무료배송">
-                                    <p>무료배송</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_easyfood.png" alt="간편 렌지업">
-                                    <p>간편 렌지업</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_dietfood.png" alt="식단필수템">
-                                    <p>식단필수템</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_mealkit.png" alt="10분밀키트">
-                                    <p>10분밀키트</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_recommended.png" alt="윙잇추천">
-                                    <p>윙잇추천</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_largefood.png" alt="대용량특가">
-                                    <p>대용량특가</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_brand.png" alt="브랜드관">
-                                    <p>브랜드관</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_set.png" alt="세트&패키지">
-                                    <p>세트&패키지</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_save.png" alt="적립금 받기">
-                                    <p>적립금 받기</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide category1">
-                                <a href="#">
-                                    <img src="./images/main/category/icon_biz.png" alt="윙잇 Biz">
-                                    <p>윙잇 Biz</p>
-                                </a>
+                <section>
+                    <div id="category">
+                        <h2>추천 카테고리</h2>
+                        <div class="swiper cate-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide category1">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_newfood.png" alt="신규해택">
+                                        <p>신규혜택</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category2">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_bestfood.png" alt="베스트템">
+                                        <p>베스트템</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category3">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_freeshipping.png" alt="무료배송">
+                                        <p>무료배송</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category4">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_easyfood.png" alt="간편 렌지업">
+                                        <p>간편 렌지업</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category5">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_dietfood.png" alt="식단필수템">
+                                        <p>식단필수템</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category6">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_mealkit.png" alt="10분밀키트">
+                                        <p>10분밀키트</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category7">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_recommended.png" alt="윙잇추천">
+                                        <p>윙잇추천</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category8">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_largefood.png" alt="대용량특가">
+                                        <p>대용량특가</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category9">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_brand.png" alt="브랜드관">
+                                        <p>브랜드관</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category10">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_set.png" alt="세트&패키지">
+                                        <p>세트&패키지</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category11">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_save.png" alt="적립금 받기">
+                                        <p>적립금 받기</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide category12">
+                                    <a href="#">
+                                        <img src="./images/main/category/icon_biz.png" alt="윙잇 Biz">
+                                        <p>윙잇 Biz</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- 작업 바깥쪽 -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-                </div>
+                </section>
                 <!-- ======================================================================3행 출시상품 -->
+                <section>
+                    <div id="launch">
+                        <div class="text">
+                            <h2>🎉 출시 상품!</h2>
+                            <p>곧 출시되는 상품을 미리 확인해보세요</p>
+                        </div>
+                        <ul class="container">
+                            <li>
+                                <div class="food_img">
+                                    <img src="./images/main/launch/launch_001.jpg" alt="">
+                                </div>
+                                <div class="food_info">
+                                    <div class="name">
+                                        <h3>[윙잇] 로스트 한마리 치킨</h3>
+                                        <p>고물가 시대 갓성비 치킨</p>
+                                    </div>
+                                    <div class="time">
+                                        <span>출시임박</span>
+                                        <em>38:29:40</em>
+                                    </div>
+                                    <div class="btn">
+                                        <p>487명이 기다리고 있어요</p>
+                                        <button type="button" class="alam">
+                                            <img src="./images/icon/icon_bell.png" alt="">
+                                            <em>출시알림 받기</em>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="food_img">
+                                    <img src="./images/main/launch/launch_002.jpg" alt="">
+                                </div>
+                                <div class="food_info">
+                                    <div class="name">
+                                        <h3>[윙잇] 포장마차 떡볶이</h3>
+                                        <p>미친 가성비의 소울푸드</p>
+                                    </div>
+                                    <div class="time">
+                                        <span>6/30일 출시 예정</span>
+                                        <em>D-15</em>
+                                    </div>
+                                    <div class="btn">
+                                        <p>143명이 기다리고있어요</p>
+                                        <button type="button" class="alam">
+                                            <img src="./images/icon/icon_bell.png" alt="">
+                                            <em>출시알림 받기</em>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <!-- ======================================================================4행 베스트 -->
+                <section>
+                    <div id="best">
+                        <h2>윙잇 베스트 상품!</h2>
+                        <div class="full-view">
+                            <p>전체보기</p>
+                            <img src="./images/icon/icon_more.png" alt="">
+                        </div>
+                        <div class="swiper tap">
+                            <!--필수-->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide tap1">
+                                    <button type="button" class="food1">구이·찜·볶음</button>
+                                </div>
+                                <div class="swiper-slide tap2">
+                                    <button type="button" class="food2">국·밥·면</button>
+                                </div>
+                                <div class="swiper-slide tap3">
+                                    <button type="button" class="food3">식단관리</button>
+                                </div>
+                                <div class="swiper-slide tap4">
+                                    <button type="button" class="food4">튀김·전</button>
+                                </div>
+                                <div class="swiper-slide tap5">
+                                    <button type="button" class="food5">분식·간식</button>
+                                </div>
+                                <div class="swiper-slide tap6">
+                                    <button type="button" class="food6">베이커리·떡</button>
+                                </div>
+                                <div class="swiper-slide tap7">
+                                    <button type="button" class="food7">반찬·소스</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper food1-swiper">
+                            <!--필수-->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="food-img">
+                                        <a href="#"><img src="#" alt="[고른] 춘천식 메밀막국수 밀키트 2인분, 2종"></a>
+                                        <button type="button" class="cart-btn"><img src="#" alt="장바구니 담기"></button>
+                                    </div>
+                                    <a href="#" class="info">
+                                        <h3>[고른] 춘천식 메밀막국수 밀키트 2인분, 2종</h3>
+                                        <div class="price">
+                                            <del>13,500원</del>
+                                            <p><em>11,900원</em> 회원할인가</p>
+                                            <div class="coupon">
+                                                <p><em>7,140원</em> 쿠폰할인가</p>
+                                                <p><img src="#" alt=""> 3,873</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide2"></div>
+                                <div class="swiper-slide slide3"></div>
+                                <div class="swiper-slide slide4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- ======================================================================<배너 광고> -->
                 <!-- ======================================================================5행 특가 -->
                 <!-- ======================================================================<배너 광고> -->
